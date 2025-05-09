@@ -93,6 +93,7 @@ scanf("%d", &hrm2);
                         case 1:
                             printf("Ingrese el numero del usuario del que quiere buscar su historial:");
                             scanf("%d", cuenta);
+                            check
 
                             
 
