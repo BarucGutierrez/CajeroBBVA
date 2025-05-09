@@ -44,7 +44,7 @@ scanf("%d", &hrm2);
                         printf("*****           Depositar Dinero           *****");
                         hrm1 = customer[cuenta].saldo;
                         customer[cuenta].saldo = cambio(0, hrm1);
-                        customer[cuenta]= hrm1 - customer[cuenta].saldo
+                        customer[cuenta].historial = customer[cuenta].saldo - hrm1  
                         printf("\nSu saldo actual es: %.2f\n\n", customer[cuenta].saldo);
                         printf("************************************************\n\n\n");
                         sleep(timer);
@@ -54,6 +54,7 @@ scanf("%d", &hrm2);
                         printf("*****            Retirar Dinero            *****");
                         hrm1 = customer[cuenta].saldo;
                         customer[cuenta].saldo = cambio(1, hrm1);
+                        customer[cuenta].historial = customer[cuenta].saldo - hrm1
                         printf("\nSu saldo actual es: %.2f\n\n", customer[cuenta].saldo);
                         printf("************************************************\n\n\n");
                         sleep(timer);
