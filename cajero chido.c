@@ -8,9 +8,9 @@ int main(){
     int cuenta;
 
     struct cliente customer[3] = {
-        {1, 1000.00, "Mario Alejandro", 1234},
-        {2, 2000.00, "Karla Flores", 5678},
-        {3, 3000.00, "Baruc Gutierrez", 9012}};
+        {1, 1000.00, "Mario Alejandro", 1234, Mexico},
+        {2, 2000.00, "Karla Flores", 5678, Mexico},
+        {3, 3000.00, "Baruc Gutierrez", 9012, Mexico}};
 
 printf("Seleccione la Versión del programa:\n");
 printf("1.\t Usuario\n");
