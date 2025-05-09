@@ -6,6 +6,8 @@ struct cliente {
     float saldo;
     char nombre[40];
     int nip;
+    char pais[50];
+    float historial[50];
 };
 
 //Función para validar la contraseña del usuario.
