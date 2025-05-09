@@ -113,10 +113,34 @@ scanf("%d", &hrm2);
         default:
             printf("\n\nopcion no valida\n\n");
             break;
+
+                        
     };
 
 
-
+//Funcion para bsucar usuarios por nombres empieza aquí
+                        //Parte afuera 
+                        char nombres [3][40];
+for (int i = 0; i < 3; i++) {
+        strcpy(nombres[i], customer[i].nombre);
+    }
+ char IngresaUsuario[40];
+ Bool flag =false;
+            //Parte de adentro del switchcase
+              printf("1.\t Buscar Usuario por nombre\n");
+                    
+                        fgets()(IngresaUsuario, sizeof(IngresaUsuario), stdin);
+                    
+                    for(i=0;i>3;i++){
+                        
+                        if (IngresaUsuario==nombres[i]){
+                            printf(" Usuario existente");
+                            flag = True;
+                        } 
+                    }
+                    if(flag=false){
+                            printf("Error, %s no es un usuario existente en el sistema\n",IngresaUsuario );} 
+            //Fin de la funcion para buscar por nombres
 
 
     return 0;
