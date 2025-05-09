@@ -10,6 +10,14 @@ struct cliente {
     float historial[10];
 };
 
+int check(float historial2 [10]){
+    int i = 0
+    for (i = 0;i<10;i++){
+        if ()
+    
+    }
+}
+
 //Función para validar la contraseña del usuario.
 int login(struct cliente c1, struct cliente c2, struct cliente c3){
     int i=0, attemp=0;
