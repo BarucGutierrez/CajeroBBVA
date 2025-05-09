@@ -81,8 +81,9 @@ scanf("%d", &hrm2);
 
         case 2:
                     printf("*****        Supervisor del banco BBVA        *****\n\n");
-                    printf("1.\t Buscar Usuario por nombre\n");
-                    printf("2.\t Buscar historial del usuario \n");
+                    printf("1.\t Crear cuenta\n");
+                    printf("2.\t Buscar Usuario por nombre\n");
+                    printf("3.\t Buscar historial del usuario \n");
                     scanf("%d", &option);
                     printf("\n************************************************\n\n\n");
             break;
