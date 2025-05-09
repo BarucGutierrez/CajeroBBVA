@@ -3,7 +3,7 @@
 
 int main(){
 
-    int option = 0, timer = 2, i=0, hrm2=0, z=0;
+    int option = 0, timer = 2, i=0, hrm2=0, z=0, opcion2=0;
     float hrm1;
     int cuenta;
 
@@ -85,9 +85,18 @@ scanf("%d", &hrm2);
                     printf("*****        Supervisor del banco BBVA        *****\n\n");
                     printf("1.\t Crear cuenta\n");
                     printf("2.\t Buscar Usuario por nombre\n");
-                    printf("3.\t Buscar historial del usuario \n");
-                    scanf("%d", &option);
+                    printf("3.\t Mostrar historial de usuario \n");
+                    scanf("%d", &option1);
                     printf("\n************************************************\n\n\n");
+
+                    switch(option1){
+                        case 1:
+                            printf("Ingrese el numero del usuario del que quiere buscar su historial:");
+                            scanf("%d", cuenta);
+
+                            
+
+                    
             break;
 
         default:
