@@ -5,6 +5,7 @@ int main(){
 
     int option = 0, timer = 2, i=0, hrm2=0;
     float hrm1;
+    int cuenta;
 
     struct cliente customer[3] = {
         {1, 1000.00, "Mario Alejandro", 1234},
@@ -18,9 +19,9 @@ scanf("%d", &hrm2);
 
     switch(hrm2){
         case 1:
-                
-                int cuenta = login(customer[0], customer[1], customer[2]);    //Llamado de la función encargada de la verificación de la contraseña
-            
+
+                 cuenta = login(customer[0], customer[1], customer[2]);    //Llamado de la función encargada de la verificación de la contraseña
+
                 do{
                     printf("*****        Cajero Automatico BBVA        *****\n\n");
                     printf("1.\t Consultar saldo\n");
@@ -30,7 +31,7 @@ scanf("%d", &hrm2);
                     printf("\nSeleccione una opcion:\t");
                     scanf("%d", &option);
                     printf("\n************************************************\n\n\n");
-            
+
                     switch(option){
                     case 1: //Muestra el saldo en pantalla
                         printf("*****           Consultar Saldo            *****");
@@ -63,7 +64,7 @@ scanf("%d", &hrm2);
                         printf("************************************************\n\n\n");
                         sleep(timer);
                         break;
-                    default:    //Mesaje si la opcion no existe
+                    default:    //Mensaje si la opcion no existe
                         printf("                     ------\n\n\n");
                         printf("************************************************");
                         printf("\n\tOpcion no valida\n");
@@ -72,10 +73,10 @@ scanf("%d", &hrm2);
                         printf("                     ------\n\n\n");
                         break;
                     }
-            
+
                 }while(option != 4); //Do-While para repetir el proceso hasta que se ingrese una opcion valida
             break;
-        
+
         case 2:
                     printf("*****        Supervisor del banco BBVA        *****\n\n");
                     printf("1.\t Buscar Usuario por nombre\n");
@@ -87,11 +88,11 @@ scanf("%d", &hrm2);
         default:
             printf("\n\nopcion no valida\n\n");
             break;
-    };    
+    };
 
 
-        
-    
- 
+
+
+
     return 0;
 }
