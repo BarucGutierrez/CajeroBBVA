@@ -91,15 +91,23 @@ scanf("%d", &hrm2);
 
                     switch(option1){
                         case 1:
+
+                            break;
+                        
+                        case 2:
                             printf("Ingrese el numero del usuario del que quiere buscar su historial:");
                             scanf("%d", cuenta);
                             check
-                        break;
+                            break;
 
-                    
+                        case 3:
+
+                            break;
+                        
+                        default:
                             
-
-                    
+                            break;
+                            
             break;
 
         default:
