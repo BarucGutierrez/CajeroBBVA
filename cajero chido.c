@@ -12,10 +12,10 @@ int main(){
         {2, 2000.00, "Karla Flores", 5678, Mexico},
         {3, 3000.00, "Baruc Gutierrez", 9012, Mexico}};
 
-printf("Seleccione la Versión del programa:\n");
-printf("1.\t Usuario\n");
-printf("2.\t Administrador\n");
-scanf("%d", &hrm2);
+    printf("Seleccione la Versión del programa:\n");
+    printf("1.\t Usuario\n");
+    printf("2.\t Administrador\n");
+    scanf("%d", &hrm2);
 
     switch(hrm2){
         case 1:
