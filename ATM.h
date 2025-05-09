@@ -112,6 +112,7 @@ float cambio(int opcion, float saldo){
 
 return saldo;   //Se regresa el valor de la variable global saldo
 }
+// Funcion para buscar usuario por nombre
 
 
 
