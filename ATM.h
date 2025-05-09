@@ -12,9 +12,10 @@ struct cliente {
 
 int check(float historial2 [10]){
     int i = 0
-    for (i = 0;i<10;i++){
-        if ()
+    for (i = 0; i<10; i++){
+        if (historial2 => 0){
     
+        }else ()
     }
 }
 
