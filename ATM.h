@@ -7,7 +7,7 @@ struct cliente {
     char nombre[40];
     int nip;
     char pais[50];
-    float historial[50];
+    float historial[10];
 };
 
 //Función para validar la contraseña del usuario.
