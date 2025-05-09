@@ -10,12 +10,12 @@ struct cliente {
     float historial[10];
 };
 
-int check(float historial2 [10]){
+int check(float historial2[10]){
     int i = 0
     for (i = 0; i<10; i++){
-        if (historial2 [i] => 0){
-    printf("Se hizo el deposito de esta cantidad: %f",historial2 [i]);
-        }else printf("Se hizo el retiro de esta cantidad: %f",historial2 [i]){
+        if (historial2[i] => 0){
+    printf("Se hizo el deposito de esta cantidad: %f",historial2[i]);
+        }else printf("Se hizo el retiro de esta cantidad: %f",historial2[i]){
             
         }
   }
