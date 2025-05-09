@@ -3,7 +3,7 @@
 
 int main(){
 
-    int option = 0, timer = 2, i=0, hrm2=0;
+    int option = 0, timer = 2, i=0, hrm2=0, z=0;
     float hrm1;
     int cuenta;
 
@@ -44,7 +44,8 @@ scanf("%d", &hrm2);
                         printf("*****           Depositar Dinero           *****");
                         hrm1 = customer[cuenta].saldo;
                         customer[cuenta].saldo = cambio(0, hrm1);
-                        customer[cuenta].historial = customer[cuenta].saldo - hrm1  
+                        customer[cuenta].historial[z] = customer[cuenta].saldo - hrm1;  
+                        z++;
                         printf("\nSu saldo actual es: %.2f\n\n", customer[cuenta].saldo);
                         printf("************************************************\n\n\n");
                         sleep(timer);
@@ -54,7 +55,8 @@ scanf("%d", &hrm2);
                         printf("*****            Retirar Dinero            *****");
                         hrm1 = customer[cuenta].saldo;
                         customer[cuenta].saldo = cambio(1, hrm1);
-                        customer[cuenta].historial = customer[cuenta].saldo - hrm1
+                        customer[cuenta].historial[z] = customer[cuenta].saldo - hrm1;
+                        z++;
                         printf("\nSu saldo actual es: %.2f\n\n", customer[cuenta].saldo);
                         printf("************************************************\n\n\n");
                         sleep(timer);
