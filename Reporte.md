@@ -8,11 +8,11 @@ Baruc Shemuel Gutierrez Fuentes
 Emiliano Barba Navarro  
 
 
-## Sobre el ATM
-**Requisitos previos para que compile el código**
-- Un sistema operativo compatible (Linux, macOS o Windows con WSL)
+# Sobre el ATM
 
 ## **Guía de Instalación**
+**Requisitos previos para que compile el código**
+- Un sistema operativo compatible (Linux, macOS o Windows con WSL)
 
 
 ## **Guía de Usuario**  
