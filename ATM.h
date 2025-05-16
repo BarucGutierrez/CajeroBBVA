@@ -134,7 +134,7 @@ void mostrar(struct cliente c1){
     printf("Nombre del dueño:\t %s\n", c1.nombre);
     printf("Pais del dueño:\t\t %s\n", c1.pais);
     printf("Nip de la cuenta:\t %d\n", c1.nip);
-    printf("historial de la cuenta:\n");
+    printf("Historial de la cuenta:\n");
     check(c1.historial);
     printf("\n\n");
 
