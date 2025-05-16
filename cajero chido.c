@@ -159,7 +159,7 @@ scanf("%d", &hrm2);
                                 if ((strcmp(IngresaUsuario, nombres[i])) == 0) {
                                     printf("Usuario existente\n");
                                     mostrar(customer[i]);
-                                    flag = 0;
+                                    flag = 1;
                                 }
                             }
 
