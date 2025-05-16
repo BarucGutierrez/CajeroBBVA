@@ -32,11 +32,12 @@ Al acceder al programa el primer menú que aparece da las opciones de usuario o 
 
 - Mostrar todas las cuentas registradas.
 - Salir.
-
-**Capacidades:**
+  
+### **Capacidades:**
 - Agregar mas usuarios  
-- Ver los movimientos de los usuarios  
-**Limitaciones:**  
+- Ver los movimientos de los usuarios
+
+### **Limitaciones:**  
 - No admite cantitades extremadamente grandes
 
 
