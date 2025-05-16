@@ -17,11 +17,11 @@ Emiliano Barba Navarro
 Al acceder al programa el primer menú que aparece da las opciones de usuario o administrador.    
 ### **Al ser usuario puedes:**    
 - *Depositar y retirar dinero.*
-      + Escribes la cantidad que deseas agregar o retirar.            
+    + Escribes la cantidad que deseas agregar o retirar.            
 - *Consultar saldo.*
-      + Después de alhún movimineto puedes asegurarte de que fue correcto.  
+    + Después de alhún movimineto puedes asegurarte de que fue correcto.  
 - *Salir.*
-      + Sales del programa.  
+    + Sales del programa.  
 ### **Al ser Administrador puedes:**  
 - Crear una cuenta nueva para acceder como usuario.
     + Te pide tu nombre, país de origen, NIP y saldo inicial
