@@ -63,17 +63,17 @@ Para hablar más sobre las cuentas debemos de separarlas en 2 partes caracterís
 - struct (estructura), en el código las struct fueron usadas para representar los clientes y sus datos.
 - void, se utilizó para funciones de las cuales no se esperaba que dieran algún dato, por ejemplo en guardar_clientes 
 ### **Acciones**
-+ **Cliente**
-+ Consultar saldo, en el que se accede y se muestra el saldo disponible y no regresa nada nuevo.
-+ Depositar saldo, el cual actualiza y guarda cambios positivos realizados al saldo y los muestra en pantalla, este devuelve Saldo nuevo (float) y se involucra con cambio() + guardar_clientes()
-+ Retirar dinero, el cual también actualiza y guarda cambios realizados en el saldo, pero en esta ocasión solo negativos, devuelve Saldo nuevo (float) y se involucra con cambio() + guardar_clientes()
-+ Salir, que lo único que hace es salir del loop
+- **Cliente**
+  + Consultar saldo, en el que se accede y se muestra el saldo disponible y no regresa nada nuevo.
+  + Depositar saldo, el cual actualiza y guarda cambios positivos realizados al saldo y los muestra en pantalla, este devuelve Saldo nuevo (float) y se involucra con cambio() + guardar_clientes()
+  + Retirar dinero, el cual también actualiza y guarda cambios realizados en el saldo, pero en esta ocasión solo negativos, devuelve Saldo nuevo (float) y se involucra con cambio() + guardar_clientes()
+  + Salir, que lo único que hace es salir del loop
 
 - **Administrador**
-+ Crear cuenta, agrega nuevo cliente y sus datos, el cúal no regresa ningún dato y se involucra con (Directo, realloc + guardar_clientes())
-+ Buscar usuario por nombre, el cual busca usuarios y muestra sus datos y se involucra con mostrar().
-+ Mostrar historial de usuario, el cual muestra las últimas actividades realizadas en una cuenta específica y se involucra con check()
-+ Mostrar todas las cuentas, que como dice muestra todas las cuentas que se encuentran registradas y se involucra con mostrar()
- + Salir, que lo único que hace es salir del loop
+  + Crear cuenta, agrega nuevo cliente y sus datos, el cúal no regresa ningún dato y se involucra con (Directo, realloc + guardar_clientes())
+  + Buscar usuario por nombre, el cual busca usuarios y muestra sus datos y se involucra con mostrar().
+  + Mostrar historial de usuario, el cual muestra las últimas actividades realizadas en una cuenta específica y se involucra con check()
+  + Mostrar todas las cuentas, que como dice muestra todas las cuentas que se encuentran registradas y se involucra con mostrar()
+  + Salir, que lo único que hace es salir del loop
 
 
