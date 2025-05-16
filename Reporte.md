@@ -24,7 +24,7 @@ Emiliano Barba Navarro
 
 ## **Guía de Usuario**  
 Al acceder al programa el primer menú que aparece da las opciones de usuario o administrador.    
-### **Al ser usuario puedes:**    
+### **Al ser cliente puedes:**    
 - *Depositar y retirar dinero.*
     + Escribes la cantidad que deseas agregar o retirar.            
 - *Consultar saldo.*
