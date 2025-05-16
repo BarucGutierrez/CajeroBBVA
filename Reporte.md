@@ -2,7 +2,7 @@
 
 ***Profesor:*** Jorge Ernesto Lopez Arce Delgado
 
-***Integrantes:***
+***Integrantes:***  
 Karla Sofía Flores Jiménez  
 Baruc Shemuel Gutierrez Fuentes  
 Emiliano Barba Navarro  
