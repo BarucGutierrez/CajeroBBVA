@@ -5,7 +5,7 @@
 
 int main(){
 
-    int option = 0, timer = 2, i=0, hrm2=0, z=0, option1=0,opcion2=0, capacidad = 3;
+    int option = 0, timer = 2, i=0,j=0, hrm2=0, z=0, option1=0,opcion2=0, capacidad = 3;
     float hrm1;
     int cuenta;
     char IngresaUsuario[50];
@@ -27,10 +27,6 @@ for(i=0;i<20;i++){
 }
 
 fflush(stdin);
-
-for(i=0; i<numClientes;i++){
-    guardar_clientes(&customer[i], numClientes);
-}
 
 printf("Seleccione la Version del programa:\n");
 printf("1.\t Usuario\n");
@@ -150,8 +146,6 @@ scanf("%d", &hrm2);
                                 strcpy(nombres[i], customer[i].nombre);
                             }
 
-                            guardar_clientes(&customer[numClientes - 1], numClientes);
-
                             printf("Cuenta creada exitosamente con número de cliente: %d\n\n\n", customer[numClientes - 1].nocliente);
                             break;
 
@@ -219,9 +213,31 @@ scanf("%d", &hrm2);
             break;
     };
 
+//****************************************
+    FILE *archivo = fopen("clientes.txt", "w");
 
+    if (archivo == NULL) {
+        printf("Error al abrir el archivo para guardar los clientes.\n");
+        return;
+    }
 
+    for (i = 0; i < numClientes; i++) {
+    fprintf(archivo, "NoCliente: %d\n", customer[i].nocliente);
+    fprintf(archivo, "Nombre: %s\n", customer[i].nombre);
+    fprintf(archivo, "NIP: %d\n", customer[i].nip);
+    fprintf(archivo, "Saldo: %.2f\n", customer[i].saldo);
+    fprintf(archivo, "Pais: %s\n", customer[i].pais);
+    fprintf(archivo, "Historial: ");
 
+    for(j=0;j<10;j++){
+        fprintf(archivo, "%.2f ", customer[i].historial[j]);
+    }
+
+    fprintf(archivo, "\n-----------------------------\n");
+    }
+
+    fclose(archivo);
+//*****************************************
 
     return 0;
 }
