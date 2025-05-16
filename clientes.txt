@@ -1,0 +1,21 @@
+NoCliente: 3
+Nombre: Baruc Gutierrez
+NIP: 9012
+Saldo: 3000.00
+Pais: Mexico
+Historial: 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+-----------------------------
+NoCliente: 3
+Nombre: Baruc Gutierrez
+NIP: 9012
+Saldo: 3000.00
+Pais: Mexico
+Historial: 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+-----------------------------
+NoCliente: 3
+Nombre: Baruc Gutierrez
+NIP: 9012
+Saldo: 3000.00
+Pais: Mexico
+Historial: 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+-----------------------------
