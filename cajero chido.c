@@ -8,7 +8,7 @@ int main(){
     int option = 0, timer = 2, i=0, hrm2=0, z=0, option1=0,opcion2=0, capacidad = 3;
     float hrm1;
     int cuenta;
-    char IngresaUsuario[40];
+    char IngresaUsuario[50];
     int flag;
 
 struct cliente *customer = NULL;
