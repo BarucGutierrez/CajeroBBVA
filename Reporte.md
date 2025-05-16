@@ -48,6 +48,7 @@ Al acceder al programa el primer menú que aparece da las opciones de usuario o 
 - Agregar mas usuarios  
 - Ver los movimientos de los usuarios
 - Guarda los valores en un archivo txt
+- El programa recibe datos de un archivo txt
 
 ### **Limitaciones:**  
 - No admite cantitades extremadamente grandes
