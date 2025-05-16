@@ -33,5 +33,12 @@ Al acceder al programa el primer menú que aparece da las opciones de usuario o 
 - Mostrar todas las cuentas registradas.
 - Salir.
 
+**Capacidades:**
+- Agregar mas usuarios  
+- Ver los movimientos de los usuarios  
+**Limitaciones:**  
+- No admite cantitades extremadamente grandes
+
+
 ## **Explicación/descripción** 
 Para hablar más sobre las cuentas debemos de separarlas en 2 partes características y acciones; de forma simple las características son los tipos de datos que contiene el programa ej. int, char etc… , las acciones por su 
