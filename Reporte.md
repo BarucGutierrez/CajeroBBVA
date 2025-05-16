@@ -10,8 +10,14 @@ Emiliano Barba Navarro
   
 
 ## **Guía de Instalación**
-**Requisitos previos para que compile el código**
+**Requisitos previos para que compile el código**  
 - Un sistema operativo compatible (Linux, macOS o Windows con WSL)
+- Descarga o clona el repositorio del código
+    +  git clone https://github.com/usuario/repositorio.git
+cd repositorio
+
+
+
 
 
 ## **Guía de Usuario**  
