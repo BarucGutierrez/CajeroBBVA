@@ -14,6 +14,7 @@ Emiliano Barba Navarro
 
 ## **Guía de Instalación**
 
+
 ## **Guía de Usuario**  
 Al acceder al programa el primer menú que aparece da las opciones de usuario o administrador.    
 ### **Al ser usuario puedes:**    
@@ -39,6 +40,7 @@ Al acceder al programa el primer menú que aparece da las opciones de usuario o 
 ### **Capacidades:**
 - Agregar mas usuarios  
 - Ver los movimientos de los usuarios
+- Guarda los valores en un archivo txt
 
 ### **Limitaciones:**  
 - No admite cantitades extremadamente grandes
