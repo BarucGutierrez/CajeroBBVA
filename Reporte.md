@@ -9,7 +9,8 @@ Emiliano Barba Navarro
 
 
 ## Sobre el ATM
-
+**Requisitos previos para que compile el código**
+- Un sistema operativo compatible (Linux, macOS o Windows con WSL)
 
 ## **Guía de Instalación**
 
@@ -19,11 +20,11 @@ Al acceder al programa el primer menú que aparece da las opciones de usuario o 
 - *Depositar y retirar dinero.*
     + Escribes la cantidad que deseas agregar o retirar.            
 - *Consultar saldo.*
-    + Después de alhún movimineto puedes asegurarte de que fue correcto.  
+    + Después de algún movimineto puedes asegurarte de que fue correcto.  
 - *Salir.*
     + Sales del programa.  
 ### **Al ser Administrador puedes:**  
-- Crear una cuenta nueva para acceder como usuario.
+- *Crear una cuenta nueva para acceder como usuario.*
     + Te pide tu nombre, país de origen, NIP y saldo inicial
 
 - *Buscar a un Usuario.*
