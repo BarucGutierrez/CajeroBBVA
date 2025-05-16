@@ -20,6 +20,11 @@ customer[0] = (struct cliente){1, 1000.00, "Mario Alejandro", 1234, "Mexico", {0
 customer[1] = (struct cliente){2, 2000.00, "Karla Flores", 5678, "Mexico", {0,0,0,0,0,0,0,0,0,0}};
 customer[2] = (struct cliente){3, 3000.00, "Baruc Gutierrez", 9012, "Mexico", {0,0,0,0,0,0,0,0,0,0}};
 
+char nombres[3][40];
+for(i=0;i<3;i++){
+    strcpy(nombres[i], customer[i].nombre);
+}
+
 fflush(stdin);
 
 for(i=0; i<numClientes;i++){
@@ -148,16 +153,16 @@ scanf("%d", &hrm2);
 
                         case 2:
                             printf("Ingrese el nombre del usuario que quiere buscar: ");
-                            scanf("%[^\n]", IngresaUsuario);
+                            scanf("s%", &IngresaUsuario);
 
                             for(i = 0; i < numClientes; i++) {
-                                if ((strcmp(IngresaUsuario, customer[i].nombre)) == 0) {
+                                if ((strcmp(IngresaUsuario, nombres[i])) == 0) {
                                     printf("Usuario existente\n");
                                     mostrar(customer[i]);
                                     flag = 1;
-                                    break;
                                 }
                             }
+
 
                               if(flag == 0) {
                                 printf("Error, %s no es un usuario existente en el sistema\n", IngresaUsuario);
