@@ -3,9 +3,9 @@
 ***Profesor:*** Jorge Ernesto Lopez Arce Delgado
 
 ***Integrantes:***
-Karla Sofía Flores Jiménez
-Baruc Shemuel Gutierrez Fuentes
-Emiliano Barba Navarro
+Karla Sofía Flores Jiménez  
+Baruc Shemuel Gutierrez Fuentes  
+Emiliano Barba Navarro  
 
 
 ## Sobre el ATM
