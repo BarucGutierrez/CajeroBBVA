@@ -6,9 +6,8 @@
 Karla Sofía Flores Jiménez  
 Baruc Shemuel Gutierrez Fuentes  
 Emiliano Barba Navarro  
-
-
-# Sobre el ATM
+  
+  
 
 ## **Guía de Instalación**
 **Requisitos previos para que compile el código**
