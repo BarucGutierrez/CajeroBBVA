@@ -15,12 +15,12 @@ Emiliano Barba Navarro
 
 ## **Guía de Usuario**  
 Al acceder al programa el primer menú que aparece da las opciones de usuario o administrador.    
-**Al ser usuario puedes:**   
+#### **Al ser usuario puedes:**   
 - Acceder a tu cuenta bancaria.  
 - Depositar y retirar dinero.  
 - Consultar saldo.  
-- Salir.    
-**Al ser Administrador puedes:**  
+- Salir.  
+#### **Al ser Administrador puedes:**  
 - Crear una cuenta nueva para acceder como usuario.
     + Te pide tu nombre, país de origen, NIP y saldo inicial
 
