@@ -128,6 +128,42 @@ return saldo;   //Se regresa el valor de la variable global saldo
 }
 // Funcion para buscar usuario por nombre
 
+void mostrar(struct cliente c1){
+    printf("Cuenta %d\n\n", c1.nocliente);
+    printf("No. Cliente:\t\t %d\n", c1.nocliente);
+    printf("Nombre del dueño:\t %s\n", c1.nombre);
+    printf("Pais del dueño:\t\t %s\n", c1.pais);
+    printf("Nip de la cuenta:\t %d\n", c1.nip);
+    printf("historial de la cuenta:\n");
+    check(c1.historial);
+    printf("\n\n");
 
+}
+
+void guardar_clientes(struct cliente *clientes, int numClientes) {
+    FILE *archivo = fopen("clientes.txt", "w");
+
+    if (archivo == NULL) {
+        printf("Error al abrir el archivo para guardar los clientes.\n");
+        return;
+    }
+
+    for (int i = 0; i < numClientes; i++) {
+    fprintf(archivo, "NoCliente: %d\n", clientes->nocliente);
+    fprintf(archivo, "Nombre: %s\n", clientes->nombre);
+    fprintf(archivo, "NIP: %d\n", clientes->nip);
+    fprintf(archivo, "Saldo: %.2f\n", clientes->saldo);
+    fprintf(archivo, "Pais: %s\n", clientes->pais);
+    fprintf(archivo, "Historial: ");
+
+    for (int i = 0; i < 10; i++) {
+        fprintf(archivo, "%.2f ", clientes->historial[i]);
+    }
+
+    fprintf(archivo, "\n-----------------------------\n");
+    }
+
+    fclose(archivo);
+}
 
 #endif // ATM_H_INCLUDED
