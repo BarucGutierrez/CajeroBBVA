@@ -153,7 +153,7 @@ scanf("%d", &hrm2);
 
                         case 2:
                             printf("Ingrese el nombre del usuario que quiere buscar: ");
-                            scanf("s%", &IngresaUsuario);
+                            scanf("%s", &IngresaUsuario);
 
                             for(i = 0; i < numClientes; i++) {
                                 if ((strcmp(IngresaUsuario, nombres[i])) == 0) {
