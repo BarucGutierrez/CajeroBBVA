@@ -12,6 +12,7 @@ int main(){
     int flag;
 
 struct cliente *customer = NULL;
+
 int numClientes = 3;
 
 customer = malloc(numClientes * sizeof(struct cliente));
@@ -20,8 +21,8 @@ customer[0] = (struct cliente){1, 1000.00, "Mario Alejandro", 1234, "Mexico", {0
 customer[1] = (struct cliente){2, 2000.00, "Karla Flores", 5678, "Mexico", {0,0,0,0,0,0,0,0,0,0}};
 customer[2] = (struct cliente){3, 3000.00, "Baruc Gutierrez", 9012, "Mexico", {0,0,0,0,0,0,0,0,0,0}};
 
-char nombres[3][40];
-for(i=0;i<3;i++){
+char nombres[20][50];
+for(i=0;i<20;i++){
     strcpy(nombres[i], customer[i].nombre);
 }
 
@@ -145,6 +146,10 @@ scanf("%d", &hrm2);
 
                             customer[numClientes - 1].nocliente = numClientes;
 
+                            for(i=0;i<20;i++){
+                                strcpy(nombres[i], customer[i].nombre);
+                            }
+
                             guardar_clientes(&customer[numClientes - 1], numClientes);
 
                             printf("Cuenta creada exitosamente con número de cliente: %d\n\n\n", customer[numClientes - 1].nocliente);
@@ -152,8 +157,11 @@ scanf("%d", &hrm2);
 
 
                         case 2:
+                            fflush(stdin);
                             printf("Ingrese el nombre del usuario que quiere buscar: ");
-                                 fgets()(IngresaUsuario, sizeof(IngresaUsuario), stdin)
+                            fgets(IngresaUsuario, sizeof(IngresaUsuario), stdin);
+
+                            IngresaUsuario[strcspn(IngresaUsuario, "\n")] = '\0';
 
                             for(i = 0; i < numClientes; i++) {
                                 if ((strcmp(IngresaUsuario, nombres[i])) == 0) {
