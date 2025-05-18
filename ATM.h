@@ -10,45 +10,38 @@ struct cliente {
     float historial[10];
 };
 
+void LimpiarPantalla() {
+    #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif
+}
+
+
 int check(float historial2[10]){
     int i;
     for (i = 0; i<10; i++){
-        if (historial2[i] >= 0){
-    printf("Se hizo el deposito de esta cantidad: %f\n",historial2[i]);
-        }else printf("Se hizo el retiro de esta cantidad: %f\n",historial2[i]);{
-
+        if (historial2[i] != 0){
+                if (historial2[i] >= 0){
+                    printf("Se hizo el deposito de esta cantidad: %.2f\n",historial2[i]);
+                }else{
+                    printf("Se hizo el retiro de esta cantidad: %.2f\n",historial2[i]);
+                }
+            }else{
+            printf("No se hizo ningun movimiento\n");
+            }
         }
-  }
     return 0;
 }
 
 //Función para validar la contraseña del usuario.
-int login(struct cliente c1, struct cliente c2, struct cliente c3){
-    int i=0, attemp=0;
+int login(struct cliente *c1, int hrm1){
+    int attemp=0, i=0;
 
-    for(i=3; i>0; i--){
-        printf("Ingrese su pin numerico (tiene %d intentos): ", i);
-        scanf("%d", &attemp);
 
-        if(attemp == c1.nip){
-            printf("\n");
-            return 0;
-        }else{
-            if(attemp == c2.nip){
-            printf("\n");
-            return 1;
-            }else{
-                if(attemp == c3.nip){
-                printf("\n");
-                return 2;
-                }else{
-                    printf("\n--- Constrasena incorrecta ---\n\n");
-                }
-            }
-        }
-    }
-    printf("\n\n\n\n\n************   Demasiados intentos fallidos   ************\n\n\n\n\n");
-exit(0);
+
+    return 100;
 }
 
 
@@ -131,9 +124,10 @@ return saldo;   //Se regresa el valor de la variable global saldo
 void mostrar(struct cliente c1){
     printf("Cuenta %d\n\n", c1.nocliente);
     printf("No. Cliente:\t\t %d\n", c1.nocliente);
-    printf("Nombre del dueño:\t %s\n", c1.nombre);
-    printf("Pais del dueño:\t\t %s\n", c1.pais);
+    printf("Nombre del cliente:\t %s\n", c1.nombre);
+    printf("Pais del cliente:\t %s\n", c1.pais);
     printf("Nip de la cuenta:\t %d\n", c1.nip);
+    printf("Dinero en la cuenta:\t %.2f\n", c1.saldo);
     printf("Historial de la cuenta:\n");
     check(c1.historial);
     printf("\n\n");
