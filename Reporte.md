@@ -18,6 +18,7 @@ Emiliano Barba Navarro
 3. Ubica los archivos fuente del programa (.c y .h), y el archivo .atm si es necesario.
 4. Compila el programa usando gcc
 5.  Ejecutar el programa para saber si funciona
+   ![Code](Code.jpeg)
 
 
 
