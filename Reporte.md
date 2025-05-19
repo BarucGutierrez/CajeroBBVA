@@ -15,7 +15,7 @@ Emiliano Barba Navarro
 2. Descarga o clona el repositorio del código
     -  [git clone](https://github.com/BarucGutierrez/CajeroBBVA)  
     ![Git Bash](Git%20Bash.png)
-3. Ubica los archivos fuente del programa (.c y .h), y el archivo .atm si es necesario.
+3. Ubica los archivos fuente del programa (.c y .h), y el archivo .atm. Necesitas tener el archivo "clientes.txt" en la misma carpeta que los codigos .c y .h.
 4. Compila el programa usando gcc
 5.  Ejecutar el programa para saber si funciona  
    ![Code compila](Code.compila.png)
