@@ -13,7 +13,7 @@ Emiliano Barba Navarro
 **Requisitos previos para que compile el código**  
 1. Un sistema operativo compatible (Linux, macOS o Windows con WSL)
 2. Descarga o clona el repositorio del código
-    -  [git clone](https://github.com/BarucGutierrez/CajeroBBVA)
+    -  [git clone](https://github.com/BarucGutierrez/CajeroBBVA)  
     ![Git Bash](Git%20Bash.png)
 3. Ubica los archivos fuente del programa (.c y .h), y el archivo .atm si es necesario.
 4. Compila el programa usando gcc
